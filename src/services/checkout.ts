@@ -44,7 +44,10 @@ export const createCheckout = async (cart: Cart, buyer: User) => {
 
         buyer: {
             firstName: buyer.firstName,
-            lastName: buyer.lastName
+            lastName: buyer.lastName,
+            contact: {
+                email: "contact@jhnferraris.dev"
+            }
         },
         requestReferenceNumber
     }
